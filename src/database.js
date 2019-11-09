@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const mysqlConnection = mysql.createConnection({
-  host: "q68u8b2buodpme2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  user: "col2vta1qq6r8nq8",
-  password: "h15aozlqefu7j6ys",
-  database: "s5b9kkquli4obw2w"
+  host: "lolyz0ok3stvj6f0.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  user: "yt8jn2272dt0okrq",
+  password: "nnd7qmd1ezeme99n",
+  database: "dzhm91j6eqm1r7w4"
 });
 
 mysqlConnection.connect(function (err) {
@@ -12,7 +12,7 @@ mysqlConnection.connect(function (err) {
         console.log(err);
         return
     }else{
-        console.log('Conection OK');
+        console.log('DB Conection OK');
     }
 });
 
