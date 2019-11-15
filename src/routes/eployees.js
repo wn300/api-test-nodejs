@@ -52,23 +52,11 @@ router.post("/api/employees/upload_file", multipartMidleware, (req, res) => {
     }
   });
 });
-var jsonArr = [{
-  foo: 'bar',
-  qux: 'moo',
-  poo: 123,
-  stux: new Date()
-},
-{
-  foo: 'bar',
-  qux: 'moo',
-  poo: 345,
-  stux: new Date()
-}];
 
 router.get('/api/employees/file',function(req, res) {
   mysqlConnection.query("select * from employee", (err, rows, fields) => {
     if (!err) {
-      res.xls('emploeados.xlsx', rows);
+      res.xls('empleados.xlsx', rows);
     } else {
       console.log(err);
     }
